@@ -11,7 +11,8 @@ const app = express()
 const PORT = process.env.port || 4000
 connectDB();
 
-const allowedOrigins = ['http://localhost:5173',"https://user-authentication-system-ashy.vercel.app"]
+const urll=process.env.FRONTEND_URL
+const allowedOrigins = ['http://localhost:5173',urll]
 
 
 app.use(express.json())
